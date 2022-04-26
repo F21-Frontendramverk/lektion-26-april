@@ -31,3 +31,7 @@ https://gist.github.com/zocom-christoffer-wallenberg/245c20e7b8204ce97db4791a4c1
 Redux tutorial: https://javascript.plainenglish.io/step-by-step-tutorial-react-redux-2022-with-hooks-3b5d63b18be9
 
 ## Videor
+
+## Inspelningar
+
+https://funet-my.sharepoint.com/:f:/g/personal/christoffer_wallenberg_folkuniversitetet_se/Ek5bfu80Vf1KmjMDxfDBlvABetGC-FDmthpe1YgfMBzyAg?e=cPcvaJ
