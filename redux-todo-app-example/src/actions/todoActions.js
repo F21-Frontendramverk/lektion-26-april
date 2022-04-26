@@ -6,10 +6,19 @@ const getTodoList = (todos) => {
 }
 
 const addNewTodo = (todo) => {
-    return {
+    const action = {
         type: 'ADD_NEW_TODO',
         payload: todo
     }
+
+    return action;
 }
 
-export { getTodoList, addNewTodo }
+const removeTodo = (id) => {
+    return {
+        type: 'REMOVE_TODO',
+        payload: id
+    }
+}
+
+export { getTodoList, addNewTodo, removeTodo }

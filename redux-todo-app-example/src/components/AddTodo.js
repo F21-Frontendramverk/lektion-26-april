@@ -14,7 +14,9 @@ function AddTodo() {
 
     function handleClick() {
         console.log(todoText);
-        dispatch(addNewTodo(todoText));
+        const action = addNewTodo(todoText);
+        console.log('handleClick action:', action);
+        dispatch(action);
     }
 
     return (

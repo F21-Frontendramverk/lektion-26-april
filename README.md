@@ -18,6 +18,14 @@ Tips! Det blir en ny action och ett nytt case i din reducer som ska triggas frå
 
 Lägg till Redux på shopping cart - övningen så att ens varukorg sparas i redux store.
 
+**Övning 4**
+
+https://gist.github.com/zocom-christoffer-wallenberg/0fbba5ddbbcefda43b2d77a596163575
+
+**Grunder i JS**
+
+https://gist.github.com/zocom-christoffer-wallenberg/245c20e7b8204ce97db4791a4c182bfc
+
 ## Artiklar
 
 Redux tutorial: https://javascript.plainenglish.io/step-by-step-tutorial-react-redux-2022-with-hooks-3b5d63b18be9

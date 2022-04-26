@@ -6,7 +6,7 @@ function TodoList() {
     const todos = useSelector((state) => { return state.todos });
 
     const todoItems = todos.map((todo) => {
-        return <TodoItem task={ todo.task } key={ todo.id } />
+        return <TodoItem task={ todo.task } id={ todo.id } key={ todo.id } />
     });
 
     return (

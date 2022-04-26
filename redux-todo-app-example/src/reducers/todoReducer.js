@@ -3,6 +3,8 @@ const initialState = {
 }
 
 const todoReducer = (state = initialState, action) => {
+    console.log('State:', state);
+    console.log('action', action);
     switch(action.type) {
         case 'GET_TODO_LIST':
             return {
@@ -26,7 +28,19 @@ const todoReducer = (state = initialState, action) => {
                     { id: state.todos.length, task: action.payload }
                 ]
             }
+        case 'REMOVE_TODO':
+            const copyTodoArray = [...state.todos];
+            const newTodoArray = copyTodoArray.filter((todo) => {
+                if (todo.id !== action.payload) {
+                    return todo;
+                }
+            });
 
+            console.log('newTodoArray:', newTodoArray);
+            return {
+                ...state,
+                todos: newTodoArray
+            }
         default:
             return state
     }
