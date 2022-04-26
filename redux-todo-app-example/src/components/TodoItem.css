@@ -1,0 +1,12 @@
+.todo-item {
+    margin-bottom: 0.5rem;
+    border: 2px double transparent;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), radial-gradient(circle at right top, rgb(1, 110, 218), rgb(217, 0, 192));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
