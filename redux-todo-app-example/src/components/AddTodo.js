@@ -1,16 +1,20 @@
 import './AddTodo.css';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
-function AddTodo(props) {
-    let todoText = '';
-    const { addTodo } = props;
+import { addNewTodo } from '../actions/todoActions';
+
+function AddTodo() {
+    const [todoText, setTodoText] = useState('');
+    const dispatch = useDispatch();
 
     function getInputValue(event) {
-        todoText = event.target.value;
+        setTodoText(event.target.value);
     }
 
     function handleClick() {
         console.log(todoText);
-        addTodo(todoText);
+        dispatch(addNewTodo(todoText));
     }
 
     return (

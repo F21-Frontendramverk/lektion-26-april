@@ -1,5 +1,7 @@
-function TodosCounter(props) {
-    const { amount } = props;
+import { useSelector } from 'react-redux';
+
+function TodosCounter() {
+    const amount = useSelector((state) => { return state.todos.length });
 
     return (
         <span>Antal todos: { amount }</span>
